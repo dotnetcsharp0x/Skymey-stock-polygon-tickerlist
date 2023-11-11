@@ -39,7 +39,7 @@ namespace Skymey_stock_polygon_tickerlist
                 try
                 {
                     resp = gt.GetTickersFromPolygon(resp);
-                    await Task.Delay(TimeSpan.FromSeconds(0));
+                    await Task.Delay(TimeSpan.FromHours(24));
                 }
                 catch (Exception ex)
                 {

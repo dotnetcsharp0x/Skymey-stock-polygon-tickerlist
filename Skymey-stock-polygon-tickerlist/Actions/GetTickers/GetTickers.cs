@@ -51,6 +51,7 @@ namespace Skymey_stock_polygon_tickerlist.Actions.GetTickers
 
                     foreach (var ticker in tp.results)
                     {
+
                         resp = ticker.ticker;
                         Console.WriteLine(ticker.ticker);
                         var ticker_find = (from i in _db.TickerList where i.ticker == ticker.ticker select i).FirstOrDefault();
